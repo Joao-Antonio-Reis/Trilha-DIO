@@ -1,0 +1,21 @@
+public class ContaTerminal {
+    public static void main(String[] args) throws Exception {
+        int numeroConta;
+        String numeroAgencia, digitoAgencia, nomeCliente = "";
+        double saldo;
+
+        
+        nomeCliente = args [0];
+        
+        numeroConta = Integer.parseInt(args [1]);
+
+        numeroAgencia = args [2];
+
+        digitoAgencia = args [3];
+
+        saldo = Double.parseDouble(args[4]);
+
+        System.out.println("Olá Cliente "+nomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é "+numeroAgencia+"-".concat(digitoAgencia)+
+        ", conta "+numeroConta+" e seu saldo: "+saldo+" já está dispónível para saque.");
+    }
+}
